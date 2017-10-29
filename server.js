@@ -75,6 +75,18 @@ app.get('/about', (req, res) => {
 });
 
 
+// -PROJECT SITE
+app.get('/project', (req, res) => {
+    
+    res.render('project.hbs', {
+        
+        pageTitle: 'Project page',
+        shortMessage: 'This is some project page',
+        someText: 'Projects will be listed here',
+    });
+});
+
+
 // -SITE FOR ERROR(JSON)
 app.get('/bad', (req, res) => {
     
